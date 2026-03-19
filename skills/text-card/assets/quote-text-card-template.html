@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root {
+        --card-width: {{card_width}};
+        --card-height: {{card_height}};
+        --bg: {{bg_color}};
+        --text: {{text_color}};
+        --quote: {{quote_color}};
+        --accent: {{accent_color}};
+        --dash: {{dash_color}};
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: "Noto Sans CJK SC", "Noto Sans SC", "Noto Sans",
+          sans-serif;
+        display: grid;
+        place-items: start center;
+      }
+
+      #card {
+        position: relative;
+        width: var(--card-width);
+        height: var(--card-height);
+        aspect-ratio: 3 / 4;
+        overflow: hidden;
+        background: var(--bg);
+      }
+
+      .quote-mark {
+        position: absolute;
+        top: {{quote_top}};
+        left: {{quote_left}};
+        width: {{quote_width}};
+        height: {{quote_height}};
+        color: var(--quote);
+        opacity: {{quote_opacity}};
+      }
+
+      .quote-mark svg,
+      .dash svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        fill: currentColor;
+      }
+
+      .content {
+        position: absolute;
+        top: {{content_top}};
+        left: {{content_left}};
+        width: {{content_width}};
+        color: var(--text);
+        font-size: {{content_font_size}};
+        line-height: {{content_line_height}};
+        font-weight: {{content_font_weight}};
+        letter-spacing: {{content_letter_spacing}};
+        white-space: normal;
+        word-break: normal;
+        overflow-wrap: normal;
+      }
+
+      .highlight {
+        position: relative;
+        display: inline-block;
+        z-index: 0;
+      }
+
+      .highlight::after {
+        content: "";
+        position: absolute;
+        left: {{highlight_left}};
+        right: {{highlight_right}};
+        bottom: {{highlight_bottom}};
+        height: {{highlight_height}};
+        background: var(--accent);
+        z-index: -1;
+      }
+
+      .dash {
+        position: absolute;
+        right: {{dash_right}};
+        bottom: {{dash_bottom}};
+        width: {{dash_width}};
+        height: {{dash_height}};
+        color: var(--dash);
+        opacity: {{dash_opacity}};
+      }
+    </style>
+  </head>
+  <body>
+    <div id="card">
+      <div class="quote-mark">
+        <svg viewBox="0 0 1195 1024" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1125.4 972.815H651.636V631.106c0-139.404 12.083-248.772 36.25-328.108 24.165-79.336 49.296-132.298 115.05-195.766C868.69 43.763 914.313 24.718 1010.828 0l67.428 145.03c-67.428 25.767-108.507 37.26-171.865 102.994-63.358 65.735-68.03 129.316-68.03 183.965h287.04v540.826z m-651.636 0H0V631.106c0-139.404 12.083-248.772 36.249-328.108 24.166-79.336 49.296-132.298 115.05-195.766C217.054 43.763 262.676 24.718 359.192 0l67.428 145.03c-67.428 25.767-108.507 37.26-171.865 102.994-63.358 65.735-68.031 129.316-68.031 183.965h287.04v540.826z"></path>
+        </svg>
+      </div>
+
+      <div class="content">
+        {{content_prefix}}<span class="highlight">{{highlight_text}}</span>{{content_suffix}}
+      </div>
+
+      <div class="dash">
+        <svg viewBox="0 0 44 10" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="0" width="44" height="10" rx="1"></rect>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
