@@ -7,11 +7,11 @@
       :root {
         --card-width: 1080px;
         --card-height: 1440px;
-        --bg: {{bg_color}};
-        --text: {{text_color}};
-        --quote: {{quote_color}};
-        --accent: {{accent_color}};
-        --dash: {{dash_color}};
+        --bg: #ede7fb;
+        --text: #403d52;
+        --quote: #dfcef0;
+        --accent: #f7be3f;
+        --dash: #dfcef0;
       }
 
       * { box-sizing: border-box; }
@@ -89,6 +89,7 @@
         height: 31px;
         background: var(--accent);
         z-index: -1;
+        border-radius: 10px;
       }
 
       .dash {
@@ -112,7 +113,7 @@
 
       <div class="content">
         <div class="content-text">
-          {{content_prefix}}<span class="highlight">{{highlight_text}}</span>{{content_suffix}}
+          加入<span class="highlight">方圆AI社区</span>，了解 AI 工具、<span class="highlight">通俗易懂</span>的方法和实践内容
         </div>
       </div>
 
