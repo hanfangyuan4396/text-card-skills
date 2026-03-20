@@ -57,5 +57,7 @@ description: 当需要制作文字卡片图片时使用，包括生成卡片 HTM
 ## 注意事项
 
 - 渲染方式、命令参数和视口设置，统一参考 `html-to-image-render` skill。
+- 若用户未指定图片保存位置，默认保存到当前工作目录的 `text-card-images/`。
+- 若 `text-card-images/` 不存在，渲染前先创建该目录。
 - 输出图片文件扩展名应与 `--image-type` 保持一致。
 - 如果底层渲染报 `element_id` 不存在，先检查 HTML 中是否真的存在 `id="card"`。
