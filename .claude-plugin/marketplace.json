@@ -1,0 +1,23 @@
+{
+  "name": "text-card-skills",
+  "owner": {
+    "name": "Han Fangyuan(方圆AI分享)",
+    "email": "hanfangyuan_ustb@163.com"
+  },
+  "metadata": {
+    "description": "Skills for generating text card HTML and rendering it to images",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "text-card-skills",
+      "description": "Generate text card HTML and render it to images",
+      "source": "./",
+      "strict": true,
+      "skills": [
+        "./skills/text-card",
+        "./skills/html-to-image-render"
+      ]
+    }
+  ]
+}
