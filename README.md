@@ -97,7 +97,9 @@ Agent 会基于模板自动生成 HTML 并渲染为图片，保存到 `text-card
 
 | HTML 源文件 | 渲染图片 |
 |-------------|---------|
-| [fangyuan-ai-community.html](docs/htmls/fangyuan-ai-community.html) | ![fangyuan-ai-community](docs/images/fangyuan-ai-community.png) |
+| [fangyuan-ai-community-blue.html](docs/htmls/fangyuan-ai-community-blue.html) | ![fangyuan-ai-community-blue](docs/images/fangyuan-ai-community-blue.png) |
+| [fangyuan-ai-community-green.html](docs/htmls/fangyuan-ai-community-green.html) | ![fangyuan-ai-community-green](docs/images/fangyuan-ai-community-green.png) |
+| [fangyuan-ai-community-purple.html](docs/htmls/fangyuan-ai-community-purple.html) | ![fangyuan-ai-community-purple](docs/images/fangyuan-ai-community-purple.png) |
 
 ## 目录结构
 
