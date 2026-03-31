@@ -67,31 +67,9 @@
 --label-text: #1a1a1a 深灰标签
 ```
 
-### indigo（深靛蓝）
-
-文件：`example-indigo.html`
-
-```
---bg: #1c1f4a        深靛蓝背景
---main-text: #f0eedd  米白标题
---accent-text: #f5d247 明黄强调
---label-text: #6b72a8 灰蓝标签
-```
-
-### moss（苔绿米白）
-
-文件：`example-moss.html`
-
-```
---bg: #f4f0e6        米白背景
---main-text: #2b2016  深棕标题
---accent-text: #c95f1a 焦糖橙强调
---label-text: #9e8c72 灰棕标签
-```
-
 ## 配色技巧
 
-- 亮色背景（orange、moss）搭配深色 `--main-text` 和 `--label-text`，保证可读性。
-- 深色背景（indigo）搭配浅色/亮色文字，`--accent-text` 用高饱和暖色形成对比焦点。
+- 亮色背景（orange）搭配深色 `--main-text` 和 `--label-text`，保证可读性。
+- 深色背景时搭配浅色/亮色文字，`--accent-text` 用高饱和暖色形成对比焦点。
 - `--label-text` 通常比 `--main-text` 更淡或更低饱和，形成信息层级。
 - 左右区域共用 `--bg`，通过 `--main-text` 与 `--accent-text` 的色彩差异区分内容区域。
