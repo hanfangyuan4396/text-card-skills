@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Skills for generating text card HTML and rendering it to images",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
