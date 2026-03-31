@@ -130,3 +130,7 @@ skills/
 - 输出目录建议使用 `text-card-images/`，该目录已被 `.gitignore` 忽略
 - 如果截图被裁切，增大 `--viewport-width` 和 `--viewport-height`
 - HTML 中的图片资源需要使用公网可访问的链接，不支持本地图片路径
+
+## 参考资料
+
+- [公众号排版器Pro](https://app.feishu.cn/app/cli_a8f1690f37b8901c)：运行在飞书上的公众号图文排版工具，本技能中的封面模板尺寸（2680×800 px，3.35:1）及设计规范参考自此工具。
