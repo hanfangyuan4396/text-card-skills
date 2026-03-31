@@ -83,23 +83,31 @@ npx skills add hanfangyuan4396/text-card-skills
 直接使用 `/text-card` 命令，让 Agent 自动帮你生成卡片：
 
 ```
-/text-card 你的卡片文案内容
+/text-card 小红书 你的卡片文案内容
+/text-card 公众号 你的卡片文案内容
 ```
 
 例如：
 ```
-/text-card 加入方圆AI社区，了解AI工具、通俗易懂的方法和实践内容
+/text-card 小红书 加入方圆AI社区，了解AI工具、通俗易懂的方法和实践内容
+/text-card 公众号 加入方圆AI社区，了解AI工具、通俗易懂的方法和实践内容
 ```
 
-Agent 会基于模板自动生成 HTML 并渲染为图片，保存到 `text-card-images/` 目录。
+Agent 会询问平台（未指定时）、随机生成三种配色方案供选择，确认后渲染为图片，保存到 `text-card-images/` 目录。
 
-### 示例效果
+### 公众号封面示例效果
 
-| HTML 源文件 | 渲染图片 |
-|-------------|---------|
-| [fangyuan-ai-community-blue.html](docs/htmls/fangyuan-ai-community-blue.html) | ![fangyuan-ai-community-blue](docs/images/fangyuan-ai-community-blue.png) |
-| [fangyuan-ai-community-green.html](docs/htmls/fangyuan-ai-community-green.html) | ![fangyuan-ai-community-green](docs/images/fangyuan-ai-community-green.png) |
-| [fangyuan-ai-community-purple.html](docs/htmls/fangyuan-ai-community-purple.html) | ![fangyuan-ai-community-purple](docs/images/fangyuan-ai-community-purple.png) |
+| 模板风格 | HTML 源文件 | 渲染图片 |
+|----------|-------------|---------|
+| 大字报刊（editorial） | [fangyuan-ai-editorial-indigo.html](docs/htmls/fangyuan-ai-editorial-indigo.html) | ![fangyuan-ai-editorial-indigo](docs/images/fangyuan-ai-editorial-indigo.png) |
+| 网格高亮（grid） | [fangyuan-ai-grid-teal.html](docs/htmls/fangyuan-ai-grid-teal.html) | ![fangyuan-ai-grid-teal](docs/images/fangyuan-ai-grid-teal.png) |
+| 色块气泡（block） | [fangyuan-ai-block-forest.html](docs/htmls/fangyuan-ai-block-forest.html) | ![fangyuan-ai-block-forest](docs/images/fangyuan-ai-block-forest.png) |
+
+### 小红书封面示例效果
+
+| 模板风格 | HTML 源文件 | 渲染图片 |
+|----------|-------------|---------|
+| 引用金句（quote） | [fangyuan-ai-community-blue.html](docs/htmls/fangyuan-ai-community-blue.html) | ![fangyuan-ai-community-blue](docs/images/fangyuan-ai-community-blue.png) |
 
 ## 目录结构
 
