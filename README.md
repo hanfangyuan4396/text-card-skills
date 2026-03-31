@@ -84,13 +84,13 @@ npx skills add hanfangyuan4396/text-card-skills
 
 ```
 /text-card 小红书 你的卡片文案内容
-/text-card 公众号 你的卡片文案内容
+/text-card 公众号 指定参考文件
 ```
 
 例如：
 ```
 /text-card 小红书 加入方圆AI社区，了解AI工具、通俗易懂的方法和实践内容
-/text-card 公众号 加入方圆AI社区，了解AI工具、通俗易懂的方法和实践内容
+/text-card 公众号 @xx.md 为这篇文章生成封面
 ```
 
 Agent 会询问平台（未指定时）、随机生成三种配色方案供选择，确认后渲染为图片，保存到 `text-card-images/` 目录。
